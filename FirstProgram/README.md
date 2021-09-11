@@ -29,6 +29,25 @@ Hello, World
 Hello, World
 ````
 # Write UseArgument.java
+## Write your name
+```java
+package FirstProgram;
+
+public class UseArgument {
+
+    public static void main(String[] args) {
+        System.out.print("Hi, ");
+        System.out.print("Alice");
+        System.out.println(". How are you?");
+    }
+
+}
+```
+Result is 
+```java
+Hi, Alice. How are you?
+```
+## Write user input
 ```java
 package FirstProgram;
 
@@ -42,8 +61,15 @@ public class UseArgument {
 
 }
 ```
-Result is Hello
+- First, you must input command line: ```javac UseArgument.java```
+- Second, you can input command: ```java UseArgument.java Alexander```
+- So the result is
+
+```java
+Hi, Alexander. How are you?
+```
 # Write UseThree.java
+## Write these name
 ```java
 public class UseThree {
     public static void main(String[] args) {
@@ -57,6 +83,31 @@ public class UseThree {
 Result
 ```java
 Hi, Alice, Bob, and Carol.
+```
+## Write User Input
+```java
+package FirstProgram;
+public class UseThree {
+
+    public static void main(String[] args) {
+        // takes three names and prints out a proper sentence with the names in the reverse of the order given
+        System.out.print("Hi, ");
+        System.out.print(args[2]);
+        System.out.print(", ");
+        System.out.print(args[1]);
+        System.out.print(", and ");
+        System.out.print(args[0]);
+        System.out.println(".");
+    }
+
+}
+```
+- First, you must input command line: ```javac UseThree.java```
+- Second, you can input command: ```java UseThree John Andy Alex```
+- So the result is 
+
+```java
+Hi, Alex, Andy, and John.
 ```
 # Describe what happens if, in HelloWorld.java, you omit
 Part 1
