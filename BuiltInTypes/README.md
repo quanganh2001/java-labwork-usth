@@ -35,9 +35,7 @@ Solution: to find the square root of c, find the roots of x^2 + 0x - c.
 ```java 
 double force = G * mass1 * mass2 / r * r; 
 ```
-to compute values according to the formula 
-$$ F = Gm_1m_2 / r^2 $$  
-Explain the problem and correct the code.
+to compute values according to the formula $F = Gm_1m_2 / r^2$. Explain the problem and correct the code.
 
 Solution: It divides by r, then multiplies by r (instead of dividing by r *r). Use parentheses:
 
